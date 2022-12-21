@@ -2,9 +2,11 @@
     const amount = document.querySelector(".js-form__amount")
     const input = document.querySelector(".js-input")
     const output = document.querySelector(".js-output")
-    const result = document.querySelector(".js-resultElement")
+    
 
+    
     const upDateResultText = (amount, rateresult, input, output) => {
+        const result = document.querySelector(".js-resultElement")
         result.innerText = `${amount.value}${input.value}
     =${rateresult.toFixed(2)}${output.value}`
 
