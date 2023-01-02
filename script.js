@@ -20,22 +20,22 @@
         let rate;
         switch (inputoutput) {
             case "PLN/USD":
-                rate = 0, 22;
+                rate = 0.22;
                 break;
             case "PLN/EUR":
-                rate = 0, 21;
+                rate = 0.21;
                 break;
             case "USD/EUR":
-                rate = 0, 95;
+                rate = 0.95;
                 break;
             case "USD/PLN":
                 rate = 4.4351;
                 break;
             case "EUR/USD":
-                rate = 1, 05;
+                rate = 1.05;
                 break;
             case "EUR/PLN":
-                rate = 4, 6821;
+                rate = 4.6821;
             default:
                 rate = 1;
         }
