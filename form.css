@@ -1,11 +1,12 @@
 .form{
-    background-color: rgb(241, 107, 107);
+    
+    background-image: url("../images/backgroundimage.png");
     border-radius: 5%;
-    margin: 30px;
+    margin: 30px auto;
     min-width: 437.60px;
+    max-width: 1000px;
 }
 .form__legend{
-    background-color: rgb(236, 80, 80);
     border-radius: 20%;
     font-weight: 700;
     font-size: 20px;
@@ -15,7 +16,7 @@
 .form__fieldset{
     border: solid 2px #777;
     border-radius: 20%;
-    background-color: rgb(241, 107, 107)
+  
 }
 .form__unorderedList{
     list-style: none;
@@ -33,7 +34,7 @@
 .form__button{
     border: none;
     border-radius: 20%;
-    background-color: rgb(236, 80, 100);
+   
     width: 80%;
     padding: 10px ;
     margin: 10px 50px;   
