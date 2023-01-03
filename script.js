@@ -3,49 +3,46 @@
     const input = document.querySelector(".js-input")
     const output = document.querySelector(".js-output")
     
-
+const calculateResult = (currencyPair) => {
+    switch (currencyPair) {
+        case "PLN/USD":
+            return 0.22;               
+        case "PLN/EUR":
+          return 0.21;               
+        case "USD/EUR":
+          return 0.95;              
+        case "USD/PLN":
+          return 4.4351;              
+        case "EUR/USD":
+          return 1.05;            
+        case "EUR/PLN":
+          return 4.6821;
+        default:
+          return 1;
+    }
+}
     
-    const upDateResultText = (amount, rateresult, input, output) => {
-        const result = document.querySelector(".js-resultElement")
-        result.innerText = `${amount.value}${input.value}
-    =${rateresult.toFixed(2)}${output.value}`
+    const updateResultText = (amount, result, input, output) => {
+        const resultElement = document.querySelector(".js-resultElement")
+        resultElement.innerText = `${amount.value}${input.value}
+    =${result.toFixed(2)}${output.value}`
 
     }
 
     const onFormSubmit = (event) => {
         event.preventDefault();
 
-        const inputoutput = `${input.value}/${output.value}`;
+        const currencyPair = `${input.value}/${output.value}`;
 
-        let rate;
-        switch (inputoutput) {
-            case "PLN/USD":
-                rate = 0.22;
-                break;
-            case "PLN/EUR":
-                rate = 0.21;
-                break;
-            case "USD/EUR":
-                rate = 0.95;
-                break;
-            case "USD/PLN":
-                rate = 4.4351;
-                break;
-            case "EUR/USD":
-                rate = 1.05;
-                break;
-            case "EUR/PLN":
-                rate = 4.6821;
-            default:
-                rate = 1;
-        }
+        const rate = calculateResult(currencyPair)
+        
         const amountvalue = amount.value;
-        const rateresult = amountvalue * rate
+        const result = amountvalue * rate
 
 
 
 
-        upDateResultText(amount, rateresult, input, output)
+        updateResultText(amount, result, input, output)
     };
 
 
