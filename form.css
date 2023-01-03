@@ -1,44 +1,54 @@
-.form{
-    
+.form {
+
     background-image: url("../images/backgroundimage.png");
     border-radius: 5%;
     margin: 30px auto;
     min-width: 437.60px;
     max-width: 1000px;
 }
-.form__legend{
+
+.form__legend {
     border-radius: 20%;
     font-weight: 700;
     font-size: 20px;
     margin-left: 50px;
 
 }
-.form__fieldset{
+
+.form__fieldset {
     border: solid 2px #777;
     border-radius: 20%;
-  
+
 }
-.form__unorderedList{
+
+.form__unorderedList {
     list-style: none;
 }
-.form__listItem{
+
+.form__listItem {
     padding: 10px 10px 10px 0;
 }
-.form__spanText{
+
+.form__spanText {
     margin-right: 10px;
     margin-left: 10px;
 }
-.form__spanText--shorter{
+
+.form__spanText--shorter {
     margin-right: 88px;
 }
-.form__button{
+
+.form__button {
     border: none;
     border-radius: 20%;
-   
+    background-color: transparent;
     width: 80%;
-    padding: 10px ;
-    margin: 10px 50px;   
+    padding: 10px;
+    margin: 10px 50px;
+    font-weight:bold ;
+    font-size: larger;
 }
-.form__paragraph{
-text-align: center;
+
+.form__paragraph {
+    text-align: center;
 }
